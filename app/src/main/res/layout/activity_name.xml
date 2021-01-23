@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".NameActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_225sdp"
+            android:src="@drawable/ic_welcoming_vector" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:fontFamily="@font/cairo"
+            android:text="@string/enter_your_name"
+            android:textColor="@color/colorPrimary"
+
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginHorizontal="@dimen/_28sdp"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:id="@+id/input_user_email"
+                android:fontFamily="@font/cairo"
+                android:layout_width="match_parent"
+                android:inputType="textPersonName"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_next_email_registeration"
+            android:fontFamily="@font/cairo"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_width="@dimen/_168sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="@color/colorOrange"
+            tools:targetApi="lollipop" />
+
+
+    </LinearLayout>
+</layout>

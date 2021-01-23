@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".features.confirem_trip.view.ConfiremTripActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/map_view"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_350sdp"
+                    map:uiCompass="true"
+                    map:uiRotateGestures="true"
+                    map:uiTiltGestures="true"
+                    map:uiZoomControls="true"
+                    map:uiZoomGestures="true" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:background="@color/goldenAccent" />
+
+                <Switch
+                    android:id="@+id/switch_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:fontFamily="sans-serif-black"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/on_off_booking"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/goldenAccent" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:background="@color/goldenAccent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:drawableStart="@drawable/ic_alarm"
+                    android:drawableLeft="@drawable/ic_alarm"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/_1_hour_to_destination"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/goldenAccent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:drawableStart="@drawable/ic_clock"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/_5_minutes_to_station"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/goldenAccent" />
+
+                <TextView
+                    android:id="@+id/text_control_panel"
+                    style="@style/adapter_clickable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Passegners Control Panel"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/goldenAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:text="Total Amout: 14 Dienar"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal" />
+
+
+                    <View
+                        android:layout_width="0.7dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/goldenAccent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:text="@string/cash_payment"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/goldenAccent" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

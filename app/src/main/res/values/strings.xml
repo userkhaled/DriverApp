@@ -1,0 +1,234 @@
+<resources>
+
+    <string name="facebook_app_id" translatable="false">412969433456406</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb412969433456406</string>
+
+    <string-array name="cars">
+        <item>Acura</item>
+        <item>Bentley</item>
+        <item>Audi</item>
+        <item>BMW</item>
+        <item>Buick</item>
+        <item>Cadillac</item>
+        <item>Chevrolet</item>
+        <item>Dodge</item>
+        <item>Fiat</item>
+        <item>Ford</item>
+        <item>Genesis</item>
+        <item>GMC</item>
+        <item>Honda</item>
+        <item>Hummer</item>
+        <item>Hyundai</item>
+        <item>Infiniti</item>
+        <item>Isuzu</item>
+        <item>Jaguar</item>
+        <item>Jeep</item>
+        <item>Kia</item>
+        <item>Land Rover</item>
+        <item>Lexus</item>
+        <item>Maserati</item>
+        <item>Maybach</item>
+        <item>Mazda</item>
+        <item>Mercedes-Benz</item>
+        <item>Mercury</item>
+        <item>Mini</item>
+        <item>Mitsubishi</item>
+        <item>Nissan</item>
+        <item>Oldsmobile</item>
+        <item>Pontiac</item>
+        <item>Porsche</item>
+        <item>RAM</item>
+        <item>Saab</item>
+        <item>Saturn</item>
+        <item>Scion</item>
+        <item>Subaru</item>
+        <item>Suzuki</item>
+        <item>Tesla</item>
+        <item>Toyota</item>
+        <item>Volkswagen</item>
+        <item>Volvo</item>
+    </string-array>
+
+    <string-array name="places">
+        <item>Tripoli</item>
+        <item>Benghazi</item>
+        <item>Misurata</item>
+        <item>the corner</item>
+        <item>Sabha</item>
+        <item>The five</item>
+        <item>Zliten</item>
+        <item>Sabratha</item>
+        <item>Gharyan</item>
+        <item>Sirte </item>
+        <item>Ajdabiya </item>
+        <item>tuber </item>
+        <item>Mortgaged </item>
+        <item>alkafara </item>
+        <item>alqiba </item>
+        <item>Bani Walid </item>
+        <item>almaraj</item>
+        <item>Nalut</item>
+        <item>Sorman</item>
+        <item>Tawergha</item>
+        <item>yufrun</item>
+        <item>Zwara</item>
+        <item>Ubari</item>
+        <item>Murzuq</item>
+        <item>Brega</item>
+        <item>hwn</item>
+        <item>Gallo</item>
+        <item>Seluk</item>
+        <item>al asabiea</item>
+        <item>alzinatan</item>
+        <item>Jufrah</item>
+        <item>muzada</item>
+        <item>albutnan</item>
+        <item>albutnan</item>
+        <item>aljabal al akhdar</item>
+        <item>alwahat</item>
+        <item>Shati Valley</item>
+        <item>wadi alhaya</item>
+        <item>Ghat </item>
+        <item>almuraqab</item>
+        <item>Al-Jafara</item>
+        <item>alniqat alkhms</item>
+        <item>aljabal algharbiu</item>
+        <item>Touakra </item>
+        <item>al abyar </item>
+        <item>Ujila </item>
+        <item>Marda </item>
+        <item>wdan </item>
+        <item>Braque </item>
+        <item>Ghadames </item>
+        <item>susa </item>
+    </string-array>
+
+
+    <string-array name="seat_count">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string name="app_name">Driver</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings" translatable="false">Settings</string>
+
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="menu_gallery" translatable="false">Gallery</string>
+    <string name="menu_slideshow" translatable="false">Slideshow</string>
+    <string name="login">login</string>
+    <string name="registerAsNewDriver">Register as driver</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="next">Next</string>
+    <string name="enterPhoneNumber">Enter phone number</string>
+    <string name="enter_confirmation_code">Enter confirmation code</string>
+    <string name="continue_with_email">Continue with email</string>
+    <string name="skip">Skip</string>
+    <string name="enter_your_name">Enter your name (e.g. Ahmed)</string>
+    <string name="wrong_credintials">wrong username or password</string>
+    <string name="enter_departure_station">Enter Departure Station</string>
+    <string name="enter_arrival_station">Enter Arrival Station</string>
+    <string name="find_driver">Find Driver</string>
+    <string name="type_mercedes">Type: Mercedes</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="choose_voyage_date">Choose Voyage Date</string>
+    <string name="book_now">Book Now</string>
+    <string name="customer_service">Customer Service</string>
+    <string name="ratings_and_reviews"><![CDATA[Ratings & Reviews]]></string>
+    <string name="my_account">My Account</string>
+    <string name="enter_promo_code">Enter Promo Code</string>
+    <string name="_1_hour_to_destination">1 Hour to destination</string>
+    <string name="_5_minutes_to_station">5 Minutes to station</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="vehicle_number">Vehicle Number:</string>
+    <string name="vehicle_type">Vehicle Type:</string>
+    <string name="from">To</string>
+    <string name="Misrata">Mistratah</string>
+    <string name="Moary">Moary</string>
+    <string name="cancel_booking">Cancel Booking</string>
+    <string name="cash_payment">Cash</string>
+    <string name="_35_dienar">35 Dienar</string>
+    <string name="time_left">1 hour left for the trip</string>
+    <string name="trip_date">Trip date:</string>
+    <string name="individuals">Individuals</string>
+    <string name="companies">Transportation Companies</string>
+
+    <string-array name="voyage_filter">
+        <item>Rating</item>
+        <item>Individuals</item>
+        <item>Transportation Companies</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="allow_booking">Allow Booking</string>
+    <string name="start_now">Start Now</string>
+    <string name="passengers_control_panel">Passengers control panel</string>
+    <string name="passenger_name">Passenger Name</string>
+    <string name="cost_of_the_trip">Cost of the trip</string>
+    <string name="technical_support">Technical Support</string>
+    <string name="lost_possessions">Lost Possessions</string>
+    <string name="app_licence">App Licence</string>
+    <string name="register_new_company">Register as company</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="choose_number_of_seats">Choose number of seats</string>
+    <string name="choose_vehicle_type">Choose Vehicle Type</string>
+    <string name="upload_your_national_id_passport">Upload your identification ID</string>
+
+    <string name="select_vehicle_type">Select Vehicle Type</string>
+    <string name="enter_vehicle_number">Enter Vehicle Number</string>
+    <string name="upload_identification_id">Upload Identification ID</string>
+    <string name="upload">upload</string>
+    <string name="register_as_company">Register as Company</string>
+    <string name="forget_paas">Forgot password ?</string>
+    <string name="enter_email">please enter your email</string>
+    <string name="matcher_email">please make your email like this example@example.com</string>
+    <string name="required_filed">this filed is required</string>
+    <string name="password_matcher">please make your password greater than 8 char</string>
+    <string name="example_example_com">example@example.com</string>
+    <string name="fb_excit">your account is exist</string>
+    <string name="success_process">Success Process</string>
+    <string name="select_image">select Image</string>
+    <string name="information">Information</string>
+    <string name="edit">Edit</string>
+    <string name="change_password">Change password</string>
+    <string name="trip_history">Trip History</string>
+    <string name="settings">Settings</string>
+    <string name="turn_on_gps">Turn on GPS</string>
+    <string name="verification_state">Verification state</string>
+    <string name="check_verification_state">Check Verification State for Email</string>
+    <string name="check_verification_state_for_user_id">check verification state for User Id</string>
+    <string name="verfication">Verfication</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="contacts">Contacts</string>
+    <string name="terms_and_conditions">Terms and conditions</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="software_license">Software license</string>
+    <string name="logout">Logout</string>
+    <string name="email_iser">email</string>
+    <string name="phone_user">phone</string>
+    <string name="user_full_name">User Full Name</string>
+    <string name="error">there are some error</string>
+    <string name="choose_station">Choose station</string>
+    <string name="enter_destination">Enter destination</string>
+    <string name="enter_station">please enter your station</string>
+    <string name="choose_trip_time">Choose trip time</string>
+    <string name="on_off_booking">On-Off Booking</string>
+    <string name="passenger_asking_for_booking">Passenger asking for booking</string>
+    <string name="decline">Decline</string>
+    <string name="accept">Accept</string>
+    <string name="booking_request">Booking Request</string>
+    <string name="cancel">Cancel</string>
+    <string name="default_notification_channel_id" translatable="false">id</string>
+</resources>

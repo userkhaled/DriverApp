@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_marginVertical="@dimen/_12sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/dialog_all_corner"
+        tools:context=".features.dialog.add_passenger.view.AddPassangerFragment">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Add New Passenger"
+                android:textColor="@color/colorPrimary"
+                android:textSize="26sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_ad_new" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="32dp"
+            android:hint="@string/passenger_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_user_name"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="32dp"
+            android:hint="@string/cost_of_the_trip">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_margin="16dp"
+                android:id="@+id/button_cancel"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:backgroundTint="@color/goldenAccent"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                tools:targetApi="lollipop" />
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:layout_margin="16dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                tools:targetApi="lollipop" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

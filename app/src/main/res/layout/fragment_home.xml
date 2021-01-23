@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".features.main.view.MainActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="32dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:src="@drawable/ic_left" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/choose_station"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:background="@drawable/border"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spinner_station"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/places" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/enter_destination"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@drawable/border"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spinner_destination"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/places" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/choose_trip_time"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_date"
+                    style="@style/adapter_clickable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RtlCompat"
+                    android:layout_marginStart="@dimen/_33sdp"
+                    android:layout_marginEnd="@dimen/_26sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    app:cardElevation="@dimen/_6sdp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_calendar" />
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:fontFamily="@font/source_sans_pro_regular"
+                            android:gravity="center"
+                            android:letterSpacing="0.1"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_find_driver"
+                    style="@style/adapter_clickable"
+                    android:layout_width="@dimen/_185sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_26sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:fontFamily="@font/source_sans_pro_bold"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="@string/start_now"
+                    android:textAllCaps="false"
+                    android:textColor="@color/goldenAccent" />
+
+                <Button
+                    android:id="@+id/button_skip_email_regesteration"
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:backgroundTint="@color/colorOrange"
+                    android:fontFamily="@font/cairo"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="@string/skip"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    tools:targetApi="lollipop" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</layout>

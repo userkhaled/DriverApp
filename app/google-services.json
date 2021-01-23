@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "640980047228",
+    "project_id": "tectikuper",
+    "storage_bucket": "tectikuper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640980047228:android:35d70c600873c2c57140f9",
+        "android_client_info": {
+          "package_name": "com.eeducationgo.markoupdrivers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640980047228-lkitcq4pu0p1gv78ug7te7ap6cio59df.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlDdlGVkfucw_edTEyC4gjHHov7H09Xzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640980047228-lkitcq4pu0p1gv78ug7te7ap6cio59df.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640980047228:android:202efbcb5a1d1e697140f9",
+        "android_client_info": {
+          "package_name": "com.eeducationgo.tectik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640980047228-pm1qq745vas3d4554agjd3adl5afc68o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eeducationgo.tectik",
+            "certificate_hash": "703791dc79f0a875a46f7b84b57569d2757af561"
+          }
+        },
+        {
+          "client_id": "640980047228-lkitcq4pu0p1gv78ug7te7ap6cio59df.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlDdlGVkfucw_edTEyC4gjHHov7H09Xzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640980047228-lkitcq4pu0p1gv78ug7te7ap6cio59df.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

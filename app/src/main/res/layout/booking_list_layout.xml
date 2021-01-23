@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        style="@style/adapter_clickable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_user_image"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_mr_khalid" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:orientation="vertical"
+                tools:ignore="RtlCompat">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_name_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:maxLines="1"
+                        android:text="Khalid El Gandoury."
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp" />
+                    <ImageView
+                        android:id="@+id/img_verfiy"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_gravity="top"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:src="@drawable/ic_trusted"
+                        tools:ignore="RtlCompat" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_phone_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/source_sans_pro_bold"
+                    android:maxLines="1"
+                    android:text="972595933777"
+                    android:textSize="@dimen/_9sdp" />
+
+                <TextView
+                    android:id="@+id/tv_amount_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:fontFamily="@font/source_sans_pro_bold"
+                    android:maxLines="1"
+                    android:text="amount : 14"
+                    android:textSize="@dimen/_9sdp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom|end"
+                android:orientation="horizontal">
+
+
+
+
+                <ImageButton
+                    android:id="@+id/ib_call"
+                    style="@style/image_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_call_24"
+                    android:layout_marginHorizontal="@dimen/_3sdp"
+                    tools:ignore="RtlCompat" />
+
+                <ImageButton
+                    android:id="@+id/ib_close"
+                    style="@style/image_button"
+                    android:layout_marginHorizontal="@dimen/_3sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_baseline_close_24"
+                    tools:ignore="RtlCompat" />
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.eeducationgo.markoupdrivers.fragments.home.view.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_confirmTripFragment"
+            app:destination="@id/confirmTripFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmTripFragment"
+        android:name="com.eeducationgo.markoupdrivers.fragments.ConfirmTripFragment"
+        android:label="ConfirmTripFragment" >
+        <action
+            android:id="@+id/action_confirmTripFragment_to_passengersControlFragment"
+            app:destination="@id/passengersControlFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passengersControlFragment"
+        android:name="com.eeducationgo.markoupdrivers.fragments.PassengersControlFragment"
+        android:label="fragment_passengers_control"
+        tools:layout="@layout/fragment_passengers_control" >
+        <action
+            android:id="@+id/action_passengersControlFragment_to_addPassengerFragment"
+            app:destination="@id/addPassengerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPassengerFragment"
+        android:name="com.eeducationgo.markoupdrivers.fragments.AddPassengerFragment"
+        android:label="fragment_add_passenger"
+        tools:layout="@layout/fragment_add_passenger" />
+
+
+</navigation>

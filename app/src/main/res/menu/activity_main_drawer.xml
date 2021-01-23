@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_account"
+            android:icon="@drawable/ic_my_account"
+            android:title="@string/my_account" />
+
+        <item
+            android:id="@+id/nav_controller_view_tag"
+            android:icon="@drawable/ic_control"
+            android:title="Control Panel" />
+
+        <item
+            android:id="@+id/nav_invite_friends"
+            android:icon="@drawable/ic_friends"
+            android:title="@string/invite_friends" />
+        <item
+            android:id="@+id/verification_state"
+            android:icon="@drawable/ic_bulb"
+            android:title="@string/verfication" />
+        <item
+            android:id="@+id/nav_customerService"
+            android:icon="@drawable/ic_bulb"
+            android:title="@string/customer_service" />
+
+    </group>
+    <group>
+        <item
+        android:id="@+id/nav_booking"
+        android:icon="@drawable/ic_send"
+        android:title="@string/booking_request" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout" />
+    </group>
+</menu>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/map_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_350sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/goldenAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/_1_hour_to_destination"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/goldenAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/_5_minutes_to_station"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/goldenAccent" />
+
+            <TextView
+                android:id="@+id/text_control_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passegners Control Panel"
+                android:layout_gravity="center"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="8dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/goldenAccent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="@string/cash_payment"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="22sp" />
+                <View
+                    android:layout_height="match_parent"
+                    android:layout_width="0.7dp"
+                    android:background="@color/goldenAccent" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="100 Dienar (total)"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/goldenAccent" />
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/button_confirm_booking"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_marginLeft="32dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginRight="32dp"-->
+<!--                android:fontFamily="@font/source_sans_pro_bold"-->
+<!--                android:text="@string/confirm_booking"-->
+<!--                android:textAllCaps="false" />-->
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

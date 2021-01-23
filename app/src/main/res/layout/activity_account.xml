@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".account.view.AccountActivity">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_225sdp"
+                android:src="@drawable/ic_welcoming_vector" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/cairo"
+                android:gravity="center_horizontal"
+                android:text="@string/my_account"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#E5E1E1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/cairo"
+                    android:gravity="center_horizontal"
+                    android:text="@string/information"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12sdp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/tv_edit"
+                    style="@style/adapter_clickable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/cairo"
+                    android:gravity="center_horizontal"
+                    android:text="@string/edit"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_name_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:fontFamily="@font/cairo"
+                android:gravity="center_horizontal"
+                android:text="User Name"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/tv_email_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:fontFamily="@font/cairo"
+                android:gravity="center_horizontal"
+                android:text="UserEmail@UserEmail.UserEmail"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/tv_phone_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:fontFamily="@font/cairo"
+                android:gravity="center_horizontal"
+                android:text="092834205"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal"
+                tools:ignore="RtlCompat" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#E5E1E1" />
+
+            <LinearLayout
+                android:id="@+id/change_pass"
+                style="@style/adapter_clickable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/_2sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:fontFamily="@font/cairo"
+                    android:gravity="center_horizontal"
+                    android:text="@string/password"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:fontFamily="@font/cairo"
+                    android:gravity="center_horizontal"
+                    android:text="@string/change_password"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#E5E1E1" />
+
+            <TextView
+                style="@style/adapter_clickable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:drawableStart="@drawable/ic_history"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/cairo"
+                android:gravity="center_horizontal"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="@string/trip_history"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal"
+                tools:ignore="RtlCompat" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#E5E1E1" />
+
+            <LinearLayout
+                style="@style/adapter_clickable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:drawableStart="@drawable/ic_settings"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:fontFamily="@font/cairo"
+                    android:gravity="center_horizontal"
+                    android:paddingVertical="@dimen/_6sdp"
+                    android:text="@string/settings"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal"
+                    tools:ignore="RtlCompat" />
+
+                <Switch
+                    android:id="@+id/sw_btn"
+                    style="@style/adapter_clickable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_26sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:text="@string/turn_on_gps"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>

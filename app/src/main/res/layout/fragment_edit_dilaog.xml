@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:gravity="center|center_horizontal|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_16sdp"
+        android:orientation="vertical"
+        tools:context=".features.dialog.edit.view.EditDialogFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/user_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/ln_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dialog_all_corner"
+                android:gravity="center_horizontal|bottom"
+                android:translationY="@dimen/_minus35sdp"
+                app:layout_constraintTop_toBottomOf="@id/civ_user_image">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_48sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="@string/user_full_name"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_11sdp"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:hint="@string/username"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:fontFamily="@font/cairo"
+                        android:inputType="textEmailAddress"
+                        android:padding="0dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_11sdp"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:hint="@string/email_iser"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputUserEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:fontFamily="@font/cairo"
+                        android:inputType="textEmailAddress"
+                        android:padding="0dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_11sdp"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:hint="@string/phone_user"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputUserPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:fontFamily="@font/cairo"
+                        android:inputType="textEmailAddress"
+                        android:padding="0dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/button_skip_email_regesteration"
+                    android:layout_width="@dimen/_168sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:fontFamily="@font/cairo"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_26sdp"
+                    android:layout_marginBottom="@dimen/_26sdp"
+                    android:backgroundTint="@color/colorOrange"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    />
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_user_image"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:src="@drawable/holder"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/ib_edit"
+                style="@style/image_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_camera"
+                android:translationX="@dimen/_minus15sdp"
+                android:translationY="@dimen/_minus18sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/civ_user_image"
+                app:layout_constraintStart_toEndOf="@id/civ_user_image"
+                app:layout_constraintTop_toTopOf="@+id/civ_user_image" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</layout>
